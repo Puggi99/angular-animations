@@ -1,0 +1,21 @@
+.openCloseComponent{
+  position: absolute,
+}
+
+.dani-component{
+  position: absolute;
+  top: 500px;
+  height: 500px;
+  left: 900px;
+}
+@keyframes suca{
+  from {left: 0px}
+  to {left: calc(100vw + 300px)}
+}
+
+
+.animate{
+  animation-name: suca;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}

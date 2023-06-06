@@ -1,0 +1,10 @@
+<button onclick="document.querySelector('.dani-component').classList.toggle('animate')">SUCA</button>
+<app-dani-animations class="dani-component"></app-dani-animations>
+
+<button type="button" (click)="showHide()">Hide/Show</button>
+
+<app-open-close [@showHide]="isShown ? 'show' : 'hide'" class="openCloseComponent">
+  <p>The box is now {{ isShown ? 'shown' : 'hidden' }}!</p>
+</app-open-close>
+
+
