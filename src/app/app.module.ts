@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OpenCloseComponent } from './components/open-close/open-close.component';
 import { DaniAnimationsComponent } from './components/open-close/dani-animations/dani-animations.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { FatButtonDirective } from './directives/fat-button.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     OpenCloseComponent,
-    DaniAnimationsComponent
+    DaniAnimationsComponent,
+    SidenavComponent,
+    FatButtonDirective
   ],
   imports: [
     BrowserModule,

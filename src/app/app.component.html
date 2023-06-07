@@ -1,3 +1,11 @@
+
+<header class="header" >
+  <h1>Animations</h1>
+  <div class="spacer"></div>
+  <button (click)="showSide()">menù</button>
+</header>
+
+
 <button onclick="document.querySelector('.dani-component').classList.toggle('animate')">SUCA</button>
 <app-dani-animations class="dani-component"></app-dani-animations>
 
@@ -8,3 +16,4 @@
 </app-open-close>
 
 
+<app-sidenav class="sidenav" [@openCloseSidenav]="isSidenavOpen? 'open' : 'closed'"></app-sidenav>
